@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mors Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+<h1>Mors Converter</h1>
+<div class="container">
+
+    <form action="/" method="POST">
+        <div class="input-box ">
+            <h2></h2>
+            <textarea  name="string" id="inputText" cols="50" rows="10" placeholder="Type the entry you want to convert"></textarea>
+        </div>
+    <input class ="button" name="text" type="submit" value="text to morse">
+    <input class ="button" name="text" type="submit" value="morse to text">
+    </form>
+
+    <div class="output-box">
+        <textarea name="mors" id="outputText" cols="50" rows="10" placeholder="You can copy the converted output from here" readonly>{{output}}</textarea>
+    </div>
+</div>
+</body>
+</html>
